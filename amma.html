@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A Thank You for My Dearest Amma &ndash; Chiru's Graduation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --maroon:#8B1818; --maroon-deep:#5C0F0F;
+    --gold:#C9A961; --gold-deep:#B08D3F; --gold-soft:#E8D9A8;
+    --cream:#FBF7EF; --ink:#2A1A1A; --paper:#FFFDF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background:
+      radial-gradient(circle at 20% 10%, rgba(201,169,97,0.20), transparent 40%),
+      radial-gradient(circle at 80% 90%, rgba(139,24,24,0.12), transparent 45%),
+      linear-gradient(135deg,#f8eedb 0%,#ead6b0 100%);
+    font-family:'Cormorant Garamond','Georgia',serif; color:var(--ink);
+    min-height:100vh; display:flex; justify-content:center; align-items:flex-start;
+    padding:40px 20px; line-height:1.6; position:relative; overflow-x:hidden;
+  }
+  .petals { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+  .petal { position:absolute; top:-10vh; font-size:24px; line-height:1; user-select:none;
+    will-change:transform,opacity; opacity:0;
+    filter:drop-shadow(0 2px 4px rgba(139,24,24,0.15));
+    animation-name:petal-fall; animation-iteration-count:infinite; animation-timing-function:linear; }
+  @keyframes petal-fall {
+    0%{ transform:translate3d(0,-10vh,0) rotate(0); opacity:0; }
+    8%{ opacity:0.9; }
+    50%{ transform:translate3d(40px,50vh,0) rotate(220deg); }
+    92%{ opacity:0.9; }
+    100%{ transform:translate3d(-30px,115vh,0) rotate(540deg); opacity:0; }
+  }
+  @keyframes petal-fall-alt {
+    0%{ transform:translate3d(0,-10vh,0) rotate(0); opacity:0; }
+    8%{ opacity:0.85; }
+    50%{ transform:translate3d(-50px,55vh,0) rotate(-180deg); }
+    92%{ opacity:0.85; }
+    100%{ transform:translate3d(35px,115vh,0) rotate(-420deg); opacity:0; }
+  }
+  .petal:nth-child(1){left:4%;font-size:22px;animation-duration:14s;animation-delay:0s}
+  .petal:nth-child(2){left:12%;font-size:28px;animation-duration:18s;animation-delay:-3s;animation-name:petal-fall-alt}
+  .petal:nth-child(3){left:19%;font-size:18px;animation-duration:12s;animation-delay:-6s}
+  .petal:nth-child(4){left:26%;font-size:26px;animation-duration:20s;animation-delay:-2s;animation-name:petal-fall-alt}
+  .petal:nth-child(5){left:33%;font-size:20px;animation-duration:16s;animation-delay:-9s}
+  .petal:nth-child(6){left:41%;font-size:30px;animation-duration:22s;animation-delay:-4s;animation-name:petal-fall-alt}
+  .petal:nth-child(7){left:49%;font-size:22px;animation-duration:15s;animation-delay:-7s}
+  .petal:nth-child(8){left:56%;font-size:24px;animation-duration:19s;animation-delay:-1s;animation-name:petal-fall-alt}
+  .petal:nth-child(9){left:64%;font-size:18px;animation-duration:13s;animation-delay:-5s}
+  .petal:nth-child(10){left:71%;font-size:28px;animation-duration:21s;animation-delay:-8s;animation-name:petal-fall-alt}
+  .petal:nth-child(11){left:79%;font-size:22px;animation-duration:17s;animation-delay:-2s}
+  .petal:nth-child(12){left:86%;font-size:26px;animation-duration:14s;animation-delay:-6s;animation-name:petal-fall-alt}
+  .petal:nth-child(13){left:93%;font-size:20px;animation-duration:18s;animation-delay:-4s}
+  .petal:nth-child(14){left:8%;font-size:16px;animation-duration:23s;animation-delay:-11s;animation-name:petal-fall-alt}
+  .petal:nth-child(15){left:37%;font-size:16px;animation-duration:24s;animation-delay:-14s}
+  .petal:nth-child(16){left:68%;font-size:16px;animation-duration:25s;animation-delay:-10s;animation-name:petal-fall-alt}
+  .petal:nth-child(17){left:15%;font-size:30px;animation-duration:19s;animation-delay:-3s}
+  .petal:nth-child(18){left:45%;font-size:32px;animation-duration:22s;animation-delay:-8s;animation-name:petal-fall-alt}
+  .petal:nth-child(19){left:75%;font-size:28px;animation-duration:20s;animation-delay:-12s}
+  .petal:nth-child(20){left:22%;font-size:26px;animation-duration:21s;animation-delay:-6s;animation-name:petal-fall-alt}
+  .petal:nth-child(21){left:58%;font-size:30px;animation-duration:18s;animation-delay:-2s}
+  .petal:nth-child(22){left:88%;font-size:26px;animation-duration:23s;animation-delay:-9s;animation-name:petal-fall-alt}
+  .petal:nth-child(23){left:30%;font-size:22px;animation-duration:17s;animation-delay:-13s}
+  .petal:nth-child(24){left:62%;font-size:22px;animation-duration:19s;animation-delay:-5s;animation-name:petal-fall-alt}
+  .petal:nth-child(25){left:3%;font-size:24px;animation-duration:24s;animation-delay:-15s}
+  .petal:nth-child(26){left:95%;font-size:24px;animation-duration:26s;animation-delay:-7s;animation-name:petal-fall-alt}
+  .petal:nth-child(27){left:50%;font-size:28px;animation-duration:20s;animation-delay:-16s}
+  .petal:nth-child(28){left:17%;font-size:20px;animation-duration:22s;animation-delay:-4s;animation-name:petal-fall-alt}
+  .petal:nth-child(29){left:6%;font-size:24px;animation-duration:16s;animation-delay:-13s}
+  .petal:nth-child(30){left:11%;font-size:20px;animation-duration:21s;animation-delay:-7s;animation-name:petal-fall-alt}
+  .petal:nth-child(31){left:16%;font-size:26px;animation-duration:18s;animation-delay:-11s}
+  .petal:nth-child(32){left:21%;font-size:18px;animation-duration:23s;animation-delay:-5s;animation-name:petal-fall-alt}
+  .petal:nth-child(33){left:28%;font-size:30px;animation-duration:19s;animation-delay:-15s}
+  .petal:nth-child(34){left:35%;font-size:22px;animation-duration:24s;animation-delay:-9s;animation-name:petal-fall-alt}
+  .petal:nth-child(35){left:42%;font-size:28px;animation-duration:17s;animation-delay:-3s}
+  .petal:nth-child(36){left:48%;font-size:20px;animation-duration:25s;animation-delay:-12s;animation-name:petal-fall-alt}
+  .petal:nth-child(37){left:54%;font-size:32px;animation-duration:20s;animation-delay:-6s}
+  .petal:nth-child(38){left:60%;font-size:24px;animation-duration:14s;animation-delay:-14s;animation-name:petal-fall-alt}
+  .petal:nth-child(39){left:66%;font-size:18px;animation-duration:22s;animation-delay:-8s}
+  .petal:nth-child(40){left:73%;font-size:30px;animation-duration:16s;animation-delay:-2s;animation-name:petal-fall-alt}
+  .petal:nth-child(41){left:80%;font-size:22px;animation-duration:21s;animation-delay:-10s}
+  .petal:nth-child(42){left:84%;font-size:26px;animation-duration:18s;animation-delay:-4s;animation-name:petal-fall-alt}
+  .petal:nth-child(43){left:91%;font-size:24px;animation-duration:23s;animation-delay:-7s}
+  .petal:nth-child(44){left:97%;font-size:20px;animation-duration:19s;animation-delay:-13s;animation-name:petal-fall-alt}
+  .petal:nth-child(45){left:1%;font-size:18px;animation-duration:26s;animation-delay:-5s}
+  .petal:nth-child(46){left:39%;font-size:28px;animation-duration:15s;animation-delay:-11s;animation-name:petal-fall-alt}
+  .petal:nth-child(47){left:53%;font-size:16px;animation-duration:27s;animation-delay:-1s}
+  .petal:nth-child(48){left:78%;font-size:18px;animation-duration:24s;animation-delay:-16s;animation-name:petal-fall-alt}
+  .petal:nth-child(49){left:24%;font-size:32px;animation-duration:13s;animation-delay:-3s}
+  .petal:nth-child(50){left:66%;font-size:30px;animation-duration:17s;animation-delay:-9s;animation-name:petal-fall-alt}
+  .petal:nth-child(51){left:9%;font-size:22px;animation-duration:25s;animation-delay:-12s}
+  .petal:nth-child(52){left:81%;font-size:24px;animation-duration:14s;animation-delay:-2s;animation-name:petal-fall-alt}
+  .invitation { z-index:1; }
+  @media (prefers-reduced-motion: reduce) { .petal { animation:none; opacity:0.25; top:30%; } }
+
+  .invitation {
+    background: var(--paper);
+    background-image:
+      repeating-linear-gradient(45deg, transparent 0, transparent 20px,
+        rgba(201,169,97,0.025) 20px, rgba(201,169,97,0.025) 21px);
+    width:100%; max-width:800px; position:relative;
+    padding:96px 72px 72px;
+    box-shadow:0 40px 100px rgba(92,15,15,0.30), 0 12px 32px rgba(0,0,0,0.10);
+    border-radius:6px; overflow:hidden;
+  }
+  .border-frame {
+    position:absolute; inset:18px; border:1px solid var(--gold);
+    border-radius:4px; pointer-events:none; opacity:0.6;
+  }
+  .border-frame::after {
+    content:''; position:absolute; inset:6px;
+    border:1px solid var(--gold-soft); border-radius:2px;
+  }
+  .corner { position:absolute; width:42px; height:42px; pointer-events:none; opacity:0.8; }
+  .corner svg { width:100%; height:100%; display:block; }
+  .corner.tl { top:28px; left:28px; }
+  .corner.tr { top:28px; right:28px; transform:scaleX(-1); }
+  .corner.bl { bottom:28px; left:28px; transform:scaleY(-1); }
+  .corner.br { bottom:28px; right:28px; transform:scale(-1,-1); }
+
+  .crest { text-align:center; margin-bottom:14px; }
+  .crest .monogram {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:104px; height:104px;
+    border:3px solid var(--maroon); border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, #fff8e7 0%, var(--paper) 60%, #f4e7c8 100%);
+    box-shadow:0 0 0 5px var(--paper), 0 0 0 7px var(--gold),
+      0 0 0 8px rgba(176,141,63,0.4), 0 8px 22px rgba(92,15,15,0.30);
+    position:relative; overflow:hidden;
+    font-size:50px; line-height:1; text-align:center;
+  }
+  .crest .monogram::before, .crest .monogram::after {
+    content:''; position:absolute; top:50%; width:110px; height:1px;
+    background:linear-gradient(to right, transparent, var(--gold), transparent);
+  }
+  .crest .monogram::before { right:118px; }
+  .crest .monogram::after  { left:118px; }
+
+  .eyebrow {
+    text-align:center; font-family:'Cinzel','Montserrat',serif;
+    font-size:11px; letter-spacing:0.5em; color:var(--maroon);
+    text-transform:uppercase; margin-bottom:10px; font-weight:500;
+  }
+  .salutation {
+    font-family:'Great Vibes',cursive; font-size:78px;
+    color:var(--maroon-deep); text-align:center;
+    line-height:1.05; margin-bottom:6px; font-weight:400;
+  }
+  .subtitle {
+    text-align:center; font-family:'Cormorant Garamond',serif;
+    font-size:19px; color:var(--maroon); font-style:italic;
+    margin-bottom:24px; font-weight:500; letter-spacing:0.04em;
+  }
+
+  .divider { display:flex; align-items:center; justify-content:center; margin:24px 0; gap:14px; }
+  .divider .line { flex:0 1 130px; height:1px; background:linear-gradient(to right, transparent, var(--gold), transparent); }
+  .divider .ornament { color:var(--gold-deep); font-size:18px; letter-spacing:6px; line-height:1; padding:0 4px; }
+
+  .letter {
+    font-size:18px; line-height:1.88; color:var(--ink);
+    margin:8px auto 8px; max-width:640px; text-align:left; font-weight:400;
+  }
+  .letter p { margin-bottom:18px; }
+  .letter p:last-child { margin-bottom:0; }
+  .letter em { color:var(--maroon); font-style:italic; }
+  .letter strong { color:var(--maroon-deep); font-weight:600; }
+  .letter .lead {
+    font-size:21px; color:var(--maroon-deep); text-align:center;
+    font-style:italic; margin-bottom:22px; line-height:1.6;
+  }
+
+  .feature-quote {
+    position:relative; margin:36px auto; padding:32px 40px; max-width:540px;
+    background:linear-gradient(135deg, rgba(255,253,248,1) 0%, rgba(248,238,219,0.6) 100%);
+    border:1px solid var(--gold); border-radius:6px;
+    box-shadow:0 0 0 4px var(--paper), 0 0 0 5px var(--gold-soft), 0 8px 28px rgba(139,24,24,0.12);
+    text-align:center;
+  }
+  .feature-quote .quote-mark {
+    position:absolute; top:-18px; left:50%; transform:translateX(-50%);
+    background:var(--paper); padding:0 14px;
+    font-family:'Great Vibes',cursive; font-size:48px; line-height:1; color:var(--gold-deep);
+  }
+  .feature-quote p {
+    margin:0; font-family:'Cormorant Garamond',serif;
+    font-size:23px; font-style:italic; color:var(--maroon-deep);
+    line-height:1.5; font-weight:500;
+  }
+  .feature-quote .attribution {
+    margin-top:14px; font-size:12px; font-family:'Cinzel',serif;
+    letter-spacing:0.3em; color:var(--gold-deep);
+    text-transform:uppercase; font-style:normal; font-weight:500;
+  }
+
+  .announcement {
+    text-align:center; margin:30px auto 18px; padding:34px 24px;
+    background:linear-gradient(to bottom, rgba(201,169,97,0.14), rgba(201,169,97,0.04));
+    border-top:1px solid var(--gold-soft); border-bottom:1px solid var(--gold-soft);
+    max-width:620px; position:relative;
+  }
+  .announcement::before, .announcement::after {
+    content:'\2767'; position:absolute; color:var(--gold); font-size:14px;
+    left:50%; transform:translateX(-50%);
+  }
+  .announcement::before { top:-9px; background:var(--paper); padding:0 8px; }
+  .announcement::after  { bottom:-9px; background:var(--paper); padding:0 8px; }
+  .announcement .label { font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.45em; color:var(--maroon); text-transform:uppercase; margin-bottom:14px; }
+  .announcement .cap { font-size:42px; line-height:1; margin-bottom:10px; }
+  .announcement .title { font-family:'Cormorant Garamond',serif; font-size:30px; color:var(--maroon-deep); font-weight:600; line-height:1.3; margin-bottom:6px; }
+  .announcement .degree { font-family:'Cormorant Garamond',serif; font-size:19px; color:var(--ink); font-style:italic; margin-bottom:4px; }
+  .announcement .school { font-family:'Cormorant Garamond',serif; font-size:17px; color:var(--ink); }
+
+  .closing {
+    text-align:center; margin-top:32px; padding-top:24px; border-top:1px solid var(--gold-soft);
+  }
+  .closing .note {
+    font-family:'Cormorant Garamond',serif; font-size:19px; font-style:italic;
+    color:var(--ink); line-height:1.78; max-width:560px; margin:0 auto 22px;
+  }
+  .signature { font-family:'Great Vibes',cursive; font-size:54px; color:var(--maroon-deep); line-height:1; margin-top:10px; }
+  .signature-label { font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.45em; color:var(--maroon); text-transform:uppercase; margin-top:10px; }
+  .with-line { font-family:'Cormorant Garamond',serif; font-size:17.5px; font-style:italic; color:var(--ink); margin-bottom:4px; }
+  .closing .namaste { display:inline-block; font-size:30px; margin-bottom:6px; }
+
+  @media (max-width:600px){
+    .invitation{padding:64px 26px 48px}
+    .border-frame{inset:10px}
+    .corner{width:32px;height:32px}
+    .corner.tl,.corner.tr{top:18px}
+    .corner.tl,.corner.bl{left:18px}
+    .corner.tr,.corner.br{right:18px}
+    .corner.bl,.corner.br{bottom:18px}
+    .salutation{font-size:52px}
+    .subtitle{font-size:16px}
+    .letter{font-size:16.5px}
+    .letter .lead{font-size:18px}
+    .feature-quote{padding:24px 22px;margin:28px auto}
+    .feature-quote p{font-size:18px}
+    .feature-quote .quote-mark{font-size:38px;top:-14px}
+    .announcement{padding:28px 20px}
+    .announcement .title{font-size:24px}
+    .signature{font-size:42px}
+    .crest .monogram{width:88px;height:88px;font-size:42px}
+    .crest .monogram::before,.crest .monogram::after{display:none}
+  }
+  @media print { body{background:white;padding:0} .invitation{box-shadow:none;max-width:100%} .petals{display:none} }
+</style>
+</head>
+<body>
+  <div class="petals" aria-hidden="true">
+    <span class="petal">&#127800;</span><span class="petal">&#127802;</span><span class="petal">&#127801;</span><span class="petal">&#128144;</span>
+    <span class="petal">&#127800;</span><span class="petal">&#127801;</span><span class="petal">&#127802;</span><span class="petal">&#127800;</span>
+    <span class="petal">&#128144;</span><span class="petal">&#127801;</span><span class="petal">&#127802;</span><span class="petal">&#127800;</span>
+    <span class="petal">&#127801;</span><span class="petal">&#127800;</span><span class="petal">&#127802;</span><span class="petal">&#128144;</span>
+    <span class="petal">&#127891;</span><span class="petal">&#127891;</span><span class="petal">&#127891;</span><span class="petal">&#127891;</span>
+    <span class="petal">&#127880;</span><span class="petal">&#127880;</span><span class="petal">&#127880;</span>
+    <span class="petal">&#10024;</span><span class="petal">&#127881;</span><span class="petal">&#10024;</span><span class="petal">&#127942;</span><span class="petal">&#11088;</span>
+    <span class="petal">&#127800;</span><span class="petal">&#127891;</span><span class="petal">&#127802;</span><span class="petal">&#127880;</span>
+    <span class="petal">&#127801;</span><span class="petal">&#127891;</span><span class="petal">&#128144;</span><span class="petal">&#10024;</span>
+    <span class="petal">&#127800;</span><span class="petal">&#127880;</span><span class="petal">&#127891;</span><span class="petal">&#127802;</span>
+    <span class="petal">&#127881;</span><span class="petal">&#127801;</span><span class="petal">&#127891;</span><span class="petal">&#11088;</span>
+    <span class="petal">&#127800;</span><span class="petal">&#127880;</span><span class="petal">&#127942;</span><span class="petal">&#127801;</span>
+    <span class="petal">&#128144;</span><span class="petal">&#127891;</span><span class="petal">&#10024;</span><span class="petal">&#127802;</span>
+  </div>
+
+  <div class="invitation">
+    <div class="border-frame"></div>
+    <div class="corner tl"><svg viewBox="0 0 42 42"><path d="M2 42 V8 Q2 2 8 2 H42" fill="none" stroke="#C9A961" stroke-width="1"/><path d="M6 42 V12 Q6 6 12 6 H42" fill="none" stroke="#C9A961" stroke-width="0.6" opacity="0.7"/><circle cx="8" cy="8" r="2" fill="none" stroke="#C9A961" stroke-width="0.8"/></svg></div>
+    <div class="corner tr"><svg viewBox="0 0 42 42"><path d="M2 42 V8 Q2 2 8 2 H42" fill="none" stroke="#C9A961" stroke-width="1"/><path d="M6 42 V12 Q6 6 12 6 H42" fill="none" stroke="#C9A961" stroke-width="0.6" opacity="0.7"/><circle cx="8" cy="8" r="2" fill="none" stroke="#C9A961" stroke-width="0.8"/></svg></div>
+    <div class="corner bl"><svg viewBox="0 0 42 42"><path d="M2 42 V8 Q2 2 8 2 H42" fill="none" stroke="#C9A961" stroke-width="1"/><path d="M6 42 V12 Q6 6 12 6 H42" fill="none" stroke="#C9A961" stroke-width="0.6" opacity="0.7"/><circle cx="8" cy="8" r="2" fill="none" stroke="#C9A961" stroke-width="0.8"/></svg></div>
+    <div class="corner br"><svg viewBox="0 0 42 42"><path d="M2 42 V8 Q2 2 8 2 H42" fill="none" stroke="#C9A961" stroke-width="1"/><path d="M6 42 V12 Q6 6 12 6 H42" fill="none" stroke="#C9A961" stroke-width="0.6" opacity="0.7"/><circle cx="8" cy="8" r="2" fill="none" stroke="#C9A961" stroke-width="0.8"/></svg></div>
+
+    <div class="crest"><div class="monogram">&#127891;</div></div>
+
+    <div class="eyebrow">A Note Of Heartfelt Gratitude</div>
+    <div class="salutation">My Dearest Amma</div>
+    <div class="subtitle">&ndash; the one who shaped my heart and soul &ndash;</div>
+
+    <div class="divider">
+      <span class="line"></span>
+      <span class="ornament">&#10086;</span>
+      <span class="line"></span>
+    </div>
+
+    <div class="letter">
+      <p class="lead">
+        Some of life's most important lessons<br>
+        are never written in any textbook.<br>
+        Amma, the most precious things I know, I learned from <em>you</em>.
+      </p>
+
+      <p>
+        You changed my life, amma &ndash; not with grand gestures, but with the quiet, patient teaching of so many good things. The values you gave me, the spiritual wisdom you shared, the way you taught me to see the world with a kind and grounded heart &ndash; all of it shaped the person I have become. You didn't just teach me lessons; you shaped my very <em>character</em>.
+      </p>
+
+      <p>
+        Even now, the good things you taught me when I was just a boy in the <strong>8th standard</strong> still live within me. They never faded. You took me to different places for recitation and so much more, opening my eyes to a world larger than myself, and teaching me how to carry myself with grace.
+      </p>
+
+      <div class="feature-quote">
+        <span class="quote-mark">&ldquo;</span>
+        <p>The good things you taught me as a boy still live in me today &ndash; and they always will.</p>
+        <div class="attribution">&ndash; your teachings became who I am &ndash;</div>
+      </div>
+
+      <p>
+        And perhaps the greatest gift of all &ndash; because of you, I learned to <em>help others from the very bottom of my heart</em>. Every time I reach out to someone in need, every time I give without expecting anything in return, that is your teaching living through me. You made me a better human being, amma. That is something no degree could ever teach.
+      </p>
+
+      <p>
+        Through every season of my life, you have always considered me your own <em>son</em> &ndash; and that love, that sense of belonging, has been one of the steadiest blessings I have ever known. I am thankful to you in every possible aspect, amma. More than words could ever hold.
+      </p>
+
+      <p style="text-align:center;">
+        And so, with so much love and gratitude, I wanted to share this moment with you:
+      </p>
+    </div>
+
+    <div class="announcement">
+      <div class="label">&#10022; With Joy &amp; Gratitude &#10022;</div>
+      <div class="cap">&#127891;</div>
+      <div class="title">I Have Graduated!</div>
+      <div class="degree">I have successfully completed my Master's degree</div>
+      <div class="school">Stevens Institute of Technology &middot; Class of 2026</div>
+    </div>
+
+    <p style="text-align:center; font-family:'Cormorant Garamond',serif; font-size:17.5px; font-style:italic; color:var(--maroon); max-width:560px; margin:0 auto 10px; line-height:1.65;">
+      This achievement is as much yours as it is mine &ndash;<br>
+      built on the values, the love, and the blessings you gave me.
+    </p>
+
+    <div class="divider">
+      <span class="line"></span>
+      <span class="ornament">&#10086;</span>
+      <span class="line"></span>
+    </div>
+
+    <div class="closing">
+      <p class="note">
+        Thank you for everything, amma &ndash; for shaping my heart, for teaching me to live with goodness, and for loving me as your own son. Whatever good there is in me today, its roots were planted by <em>you</em>. This degree carries your blessings in every letter.
+      </p>
+      <span class="namaste">&#128591;</span>
+      <div class="with-line">With all my love and pranams,</div>
+      <div class="signature">Chiru</div>
+      <div class="signature-label">&#10022; &nbsp; your son, always &nbsp; &#10022;</div>
+    </div>
+  </div>
+</body>
+</html>
